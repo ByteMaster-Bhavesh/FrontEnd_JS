@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  /* Instagram Gradient Background */
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  width: 360px;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* Header Section */
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+}
+
+.avatar-ring {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.avatar-fill {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.username {
+  font-weight: 700;
+  font-size: 13px;
+  color: #262626;
+  line-height: 1.2;
+}
+
+.location {
+  font-size: 11px;
+  color: #8e8e8e;
+  margin-top: 2px;
+}
+
+.more-options {
+  cursor: pointer;
+  color: #a8a8a8;
+  display: flex;
+  align-items: center;
+}
+
+/* Checkerboard Media Placeholder */
+#post-image {
+    height: 40vh;
+    width: 100%;
+    background-color: #3897f0;
+    z-index: 0;
+    position: relative;
+}
+
+
+#post{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+#post-image i{
+    color: #ffffff;
+    position: absolute;
+    top : 50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.8;
+    transition: all ease 0.3s;
+
+}
+
+/* Action Icons */
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 14px 6px;
+}
+
+.left-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.action-icon {
+  cursor: pointer;
+  color: #262626;
+  stroke-width: 1.8;
+  width: 22px;
+  height: 22px;
+}
+
+/* Card Body Details */
+.card-body {
+  padding: 0 14px 16px;
+}
+
+.likes-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 8px;
+}
+
+.likes-count i {
+  width: 12px;
+  height: 12px;
+  fill: #262626;
+}
+
+.caption {
+  font-size: 12px;
+  color: #262626;
+  line-height: 1.4;
+}
+
+.caption-user {
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.hashtag {
+  color: #3897f0;
+  text-decoration: none;
+}

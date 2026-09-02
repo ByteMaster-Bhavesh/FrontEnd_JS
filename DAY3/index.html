@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Post UI</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Header -->
+    <div class="card-header">
+      <div class="avatar-ring">
+        <div class="avatar-fill"></div>
+      </div>
+      <div class="user-info">
+        <span class="username">robert_hare</span>
+        <span class="location">Altadena, California</span>
+      </div>
+      <div class="more-options">
+        <i data-feather="more-vertical"></i>
+      </div>
+    </div>
+
+    <!-- Image Area with Checkerboard Background -->
+    <div id="post-image">
+        <img id="post" src="/DAY3/assets/premium_photo-1781833001413-be0b4c1b3b9e.avif" alt="">
+        <i class="ri-heart-3-fill"></i>
+    </div>
+
+    <!-- Action Bar -->
+    <div class="card-actions">
+      <div class="left-actions">
+        <i data-feather="heart" class="action-icon"></i>
+        <i data-feather="message-circle" class="action-icon"></i>
+        <i data-feather="send" class="action-icon"></i>
+      </div>
+      <i data-feather="bookmark" class="action-icon"></i>
+    </div>
+
+    <!-- Details Body -->
+    <div class="card-body">
+      <div class="likes-count">
+        <i data-feather="heart"></i>
+        <span>212 Likes</span>
+      </div>
+      <div class="caption">
+        <span class="caption-user">robert_hare</span>
+        lorem ipsum dolor sit amet 
+        <a href="#" class="hashtag">#augue</a> 
+        <a href="#" class="hashtag">#adipiscing</a> 
+        <a href="#" class="hashtag">#elit</a> 
+        <a href="#" class="hashtag">#do</a> 
+        <a href="#" class="hashtag">#eiusmod</a> 
+        <a href="#" class="hashtag">#tempor</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    feather.replace();
+  </script>
+
+  <script src="script.js"></script>
+  </body>
+</html>
