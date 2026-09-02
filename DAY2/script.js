@@ -1,7 +1,7 @@
 var addrm = document.querySelector(".add-rm-btn");
 var isstatus = document.querySelector("h2")
 
-check = 0;
+var check = 0;
 
 addrm.addEventListener("click",function(){
     if (check == 0){
