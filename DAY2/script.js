@@ -8,10 +8,14 @@ addrm.addEventListener("click",function(){
         isstatus.innerHTML = 'Friends❤️',
         isstatus.style.color = 'green',
         check = 1;
+        addrm.innerHTML = "Remove"
+        addrm.style.backgroundColor = "gray"
     }
     else{
         isstatus.innerHTML = 'Strenger😏',
         isstatus.style.color = 'red',
         check = 0;
+        addrm.innerHTML = "Add Friend"
+        addrm.style.backgroundColor = "#5d8e8f"
     }
 })
