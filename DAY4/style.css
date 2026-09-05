@@ -40,5 +40,6 @@ h1{
     mix-blend-mode: difference;
     border-radius: 50%;
     position: absolute;
+    transform: translate(-50%, -50%);
     transition: all linear 0.1s;
 }
