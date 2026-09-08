@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: auto;
+    width: 100%;
+    background-color: black;    
+    overflow-x: hidden;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+
+#dot{
+    position: fixed;
+    height: 0.5vw;
+    width: 0.5vw;
+    pointer-events: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all linear 0.1s;
+        
+}
+
+
+.nav{
+   height: 4vw;
+   width: 100%;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 3vw;
+   padding-right: 3vw;
+}
+
+h3{
+    font-size: 0.9vw;
+    font-weight: 700;
+    color: white;
+
+}
+
+a{
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+#herotitle1{
+    line-height: 0.8;
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    object-fit: cover;
+    padding-top: 2vw;
+}
+
+#herotitle1 h1{
+    font-size: 10vw;
+    color: white;
+    font-weight:600 ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    padding-left: 3vw;
+    opacity: 0.6;
+}
+#herotitle2{
+    width: 60%;
+}
+
+#herotitle2 h1{
+    line-height: 1;
+    font-size: 10vw;
+    color: white;
+    font-weight:600 ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    padding-left: 2vw;
+    opacity: 0.6;
+    text-align: right;    
+}
+
+#herotitle2 #short{
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 600;
+}
